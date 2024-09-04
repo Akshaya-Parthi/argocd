@@ -30,8 +30,6 @@ kind: Service
 metadata:
   namespace: nginx
   name: nginx-service
-  annotations:
-    cloud.google.com/load-balancer-type: Internal
 spec:
   ports:
   - port: 80
@@ -39,4 +37,4 @@ spec:
     name: http
   selector:
     app: nginx-server
-  type: LoadBalancer
+  type: NodePort
