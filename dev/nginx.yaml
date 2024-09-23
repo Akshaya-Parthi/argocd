@@ -23,7 +23,6 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  namespace: my-app
   name: nginx-service
 spec:
   ports:
